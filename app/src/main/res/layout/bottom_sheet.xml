@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/holder"
+    android:maxHeight="450dp"
+    android:paddingBottom="32dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="24dp"
+    android:elevation="10dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/holder"
+        android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAccessibility="no" />
+
+    <Button
+        android:id="@+id/sin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_1"
+        android:padding="16dp"
+        android:textSize="20sp"
+
+        android:text="@string/sin"
+        android:textAllCaps="false"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/cos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arrow"
+        tools:backgroundTint="@color/teal" />
+
+    <Button
+        android:id="@+id/cos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_1"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:text="@string/cos"
+        android:textAllCaps="false"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/tan"
+        app:layout_constraintStart_toEndOf="@id/sin"
+        app:layout_constraintTop_toBottomOf="@id/arrow"
+        tools:backgroundTint="@color/teal" />
+
+    <Button
+        android:id="@+id/tan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_1"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:text="@string/tan"
+        android:textAllCaps="false"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cos"
+        app:layout_constraintTop_toBottomOf="@id/arrow"
+        tools:backgroundTint="@color/teal" />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_1"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:text="@string/log"
+        android:textAllCaps="false"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/factorial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sin"
+        tools:backgroundTint="@color/teal" />
+
+    <Button
+        android:id="@+id/factorial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_1"
+        android:padding="16dp"
+        android:text="@string/factorial"
+        android:textSize="20sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@+id/e"
+        app:layout_constraintStart_toEndOf="@id/log"
+        app:layout_constraintTop_toBottomOf="@id/cos"
+        tools:backgroundTint="@color/teal" />
+
+    <Button
+        android:id="@+id/e"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_1"
+        android:padding="16dp"
+        android:text="@string/e"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/factorial"
+        app:layout_constraintTop_toBottomOf="@id/tan"
+        tools:backgroundTint="@color/teal" />
+
+    <Button
+        android:id="@+id/pie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_1"
+        android:padding="16dp"
+        android:text="@string/pie"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/raisePower"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/log"
+        tools:backgroundTint="@color/teal" />
+
+    <Button
+        android:id="@+id/raisePower"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_1"
+        android:padding="16dp"
+        android:text="@string/raise_power"
+        android:textSize="20sp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/underRoot"
+        app:layout_constraintStart_toEndOf="@id/pie"
+        app:layout_constraintTop_toBottomOf="@id/factorial"
+        tools:backgroundTint="@color/teal" />
+
+    <Button
+        android:id="@+id/underRoot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_1"
+        android:padding="16dp"
+        android:text="@string/square_root"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/raisePower"
+        app:layout_constraintTop_toBottomOf="@id/e"
+        tools:backgroundTint="@color/teal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
